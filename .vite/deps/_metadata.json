@@ -1,0 +1,55 @@
+{
+  "hash": "730c1d92",
+  "configHash": "aba0cf30",
+  "lockfileHash": "5cdab0d9",
+  "browserHash": "98502c38",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "484a2359",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "fa21f749",
+      "needsInterop": true
+    },
+    "@react-three/fiber": {
+      "src": "../../node_modules/@react-three/fiber/dist/react-three-fiber.esm.js",
+      "file": "@react-three_fiber.js",
+      "fileHash": "ed50681f",
+      "needsInterop": false
+    },
+    "@react-three/drei": {
+      "src": "../../node_modules/@react-three/drei/index.js",
+      "file": "@react-three_drei.js",
+      "fileHash": "5eca5f2b",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-563FDNKK": {
+      "file": "chunk-563FDNKK.js"
+    },
+    "chunk-O5VS3KIV": {
+      "file": "chunk-O5VS3KIV.js"
+    },
+    "chunk-32E4H3EV": {
+      "file": "chunk-32E4H3EV.js"
+    },
+    "hls-HGMME54E": {
+      "file": "hls-HGMME54E.js"
+    },
+    "chunk-CCJR3TD6": {
+      "file": "chunk-CCJR3TD6.js"
+    },
+    "vision_bundle-DIJDKRYK": {
+      "file": "vision_bundle-DIJDKRYK.js"
+    },
+    "chunk-G3PMV62Z": {
+      "file": "chunk-G3PMV62Z.js"
+    }
+  }
+}
