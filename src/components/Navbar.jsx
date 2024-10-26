@@ -1,55 +1,29 @@
-import React from 'react';
-
-const Navbar = ({ hoverColor, neighborColor, normalColor }) => {
+function Navbar() {
   return (
-    <nav className="absolute top-6 left-1/2 transform -translate-x-1/2 h-16 w-[60%] bg-white/5 backdrop-blur-sm border border-white/10 flex justify-between items-center px-8 rounded-xl z-10">
+    <div className="">
+      <header className="text-gray-400  body-font">
+        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span className="ml-3 text-xl font-extrabold ">HackFed</span>
+          </a>
+          <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a className="mr-5 hover:text-white">First Link</a>
+            <a className="mr-5 hover:text-white">Second Link</a>
+            <a className="mr-5 hover:text-white">Third Link</a>
+            <a className="mr-5 hover:text-white">Fourth Link</a>
+          </nav>
+          <button className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Button
+            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+    </div>
+  )
+}
 
-      <div className="text-3xl font-thin text-indigo-300">
-        <a href="#" className="transition-colors duration-300 hover:text-indigo-100">HackFed</a>
-      </div>
-
-     
-      <div className="flex space-x-6">
-        <a
-          href="#"
-          className={`transition-colors duration-300 font-thin text-lg relative px-4 py-2 rounded-lg`}
-          style={{ color: normalColor }}
-        >
-          <span className="hover:bg-white/10 hover:backdrop-blur-md hover:border hover:border-white/20 hover:text-indigo-100 transition-all duration-300 px-4 py-2 rounded-lg">
-            Home
-          </span>
-        </a>
-        <a
-          href="#about"
-          className={`transition-colors duration-300 font-thin text-lg relative px-4 py-2 rounded-lg`}
-          style={{ color: normalColor }}
-        >
-          <span className="hover:bg-white/10 hover:backdrop-blur-md hover:border hover:border-white/20 hover:text-indigo-100 transition-all duration-300 px-4 py-2 rounded-lg">
-            About
-          </span>
-        </a>
-        <a
-          href="#contact"
-          className={`transition-colors duration-300 font-thin text-lg relative px-4 py-2 rounded-lg`}
-          style={{ color: normalColor }}
-        >
-          <span className="hover:bg-white/10 hover:backdrop-blur-md hover:border hover:border-white/20 hover:text-indigo-100 transition-all duration-300 px-4 py-2 rounded-lg">
-            Contact
-          </span>
-        </a>
-      </div>
-
-    
-      <div>
-        <a
-          href="#join"
-          className="bg-indigo-600 text-white px-6 py-2 rounded-lg transition-all duration-300 hover:bg-indigo-400"
-        >
-          Join Community
-        </a>
-      </div>
-    </nav>
-  );
-};
-
-export default Navbar;
+export default Navbar

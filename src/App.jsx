@@ -1,44 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import ParticleRing from './components/Particle'
-import BubbleText from './components/BubbleText'
-import Navbar from './components/Navbar'
+import { useEffect } from 'react';
+import './App.css';
+import Footer from './components/Fotter'; // Ensure the spelling matches
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import OurTeam from './pages/OurTeam';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 function App() {
-  const hoverColor = "rgb(238, 242, 255)";
-  const neighborColor = "rgb(199, 210, 254)";
-  const normalColor = "rgb(165, 180, 252)";
-
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    const timer = setTimeout(() => {
+      document.body.style.overflow = 'auto'; // Enable scrolling
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
-    <>
- <Navbar hoverColor={hoverColor} neighborColor={neighborColor} normalColor={normalColor} />
-
-
-    <div style={{ position: "relative", height: "100vh", overflow: "hidden" }}>
-      <ParticleRing />
-      <div
-        style={{
-          position: "absolute",
-          top: "45%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          textAlign: "center",
-          zIndex: 1, // Make sure the text is above the particles
-        }}
-      >
-        <BubbleText
-          text="HackFed"
-          hoverColor="rgb(238, 242, 255)" 
-          neighborColor="rgb(199, 210, 254)" // Match with particle neighbor color
-          normalColor="rgb(165, 180, 252)" // Match with particle normal color
-          fontSize="text-9xl" // Increase font size for visibility
-        />
+    <Router>
+      <div className="app-container bg-black"> {/* Added wrapper div */}
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} exact />
+          <Route path="/OurTeam" element={<OurTeam />} exact />
+        </Routes>
+        <Footer />
       </div>
-    </div>
-    
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;
