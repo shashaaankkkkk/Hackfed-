@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Hero from './pages/Hero'
-import RotatingText from './components/RotatingText'
+import CircularText from './components/CircularText'
 
 
 
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-<RotatingText></RotatingText>
+<CircularText></CircularText>
 
     </>
   )
