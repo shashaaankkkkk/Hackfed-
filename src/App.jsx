@@ -1,21 +1,20 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Hero from './pages/Hero'
-import CircularText from './components/CircularText'
-
+import Hero2 from './pages/Hero2'
+import Emoji from 'react-emojis';
 
 
 function App() {
-
-
   return (
     <>
-<CircularText></CircularText>
-
+      {/* Ensure the container is styled properly */}
+      <div className="w-full h-full">
+        <Hero2 />
+        </div> 
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+

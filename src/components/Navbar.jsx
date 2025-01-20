@@ -4,7 +4,7 @@ const Navbar = ({ hoverColor, neighborColor, normalColor }) => {
   return (
     <nav className="absolute top-6 left-1/2 transform -translate-x-1/2 h-16 w-[60%] bg-white/5 backdrop-blur-sm border border-white/10 flex justify-between items-center px-8 rounded-xl z-10">
 
-      <div className="text-3xl font-thin text-indigo-300">
+      <div className="text-3xl font-thin text-white">
         <a href="#" className="transition-colors duration-300 hover:text-indigo-100">HackFed</a>
       </div>
 
